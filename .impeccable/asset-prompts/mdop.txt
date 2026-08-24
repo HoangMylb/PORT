@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: conceptual portfolio project artwork for a React/Next.js case study.
+Primary request: Premium Porsche-inspired automotive conversion website shown as a sophisticated editorial desktop web interface, but without any real logos or trademarks.
+Scene/backdrop: deep graphite studio surface, refined warm yellow highlight.
+Subject: a dark graphite performance coupe in a cinematic three-quarter crop with an abstract vehicle-finder interface layered beside it, selection states and comparison strip visible but no readable UI text.
+Style/medium: photoreal automotive art direction combined with high-end web product mockup, sharp restrained visual hierarchy.
+Composition/framing: landscape 16:10, vehicle weighted to the right, clear quieter left-side negative space for overlaid portfolio copy.
+Lighting/mood: controlled studio reflections, calm, engineered, premium.
+Color palette: tinted near-black, graphite, brushed silver, one warm yellow accent.
+Text: no text, no logos, no watermarks.
+Constraints: must read as a conceptual product visual, not an advertisement; no people; no neon, no cyberpunk, no gradient-heavy SaaS look.

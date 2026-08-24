@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: conceptual portfolio project artwork for a restaurant website redesign case study.
+Primary request: A refined mobile-first Vietnamese restaurant menu and store finder web experience, presented as an editorial food interface with a richly styled dish as the visual focus. No brand logos and no readable text.
+Scene/backdrop: warm stone tabletop and dark near-black UI framing.
+Subject: generous Vietnamese-inspired shared dish photography at the centre, with two elegant smartphone/interface panels suggesting menu browsing and location selection.
+Style/medium: premium food editorial photography fused with sophisticated responsive product mockup.
+Composition/framing: landscape 16:10, food is dominant in the left-centre; quiet dark space at right for possible portfolio overlay.
+Lighting/mood: warm directional restaurant lighting, tactile, inviting but not rustic.
+Color palette: charcoal, warm off-white, muted saffron yellow, deep red-brown food tones.
+Text: no text, no logos, no watermarks.
+Constraints: conceptual project visual only; avoid generic delivery-app UI, excessive rounded cards, purple/blue gradients, neon, and stock-photo collage appearance.
