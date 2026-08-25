@@ -106,7 +106,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/my/Desktop/CaseStudy/DEV/HoangMy",
+    "outputFileTracingRoot": "/Users/my/Documents/GitHub/PORT",
     "enablePrerenderSourceMaps": true,
     "cacheComponents": false,
     "cacheLife": {
@@ -321,13 +321,13 @@
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
-    "repoRoot": "/Users/my/Desktop/CaseStudy/DEV/HoangMy",
+    "repoRoot": "/Users/my/Documents/GitHub/PORT",
     "turbopack": {
-      "root": "/Users/my/Desktop/CaseStudy/DEV/HoangMy"
+      "root": "/Users/my/Documents/GitHub/PORT"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/my/Desktop/CaseStudy/DEV/HoangMy",
+  "appDir": "/Users/my/Documents/GitHub/PORT",
   "relativeAppDir": "",
   "files": [
     ".next/package.json",
