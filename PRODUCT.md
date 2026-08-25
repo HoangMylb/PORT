@@ -36,7 +36,7 @@ Hoàng Mỹ is a Frontend Specialist focused on React and Next.js who connects e
 - Full-stack awareness: .NET backend debugging, authentication flows, APIs, business-logic debugging, and end-to-end data-flow understanding.
 - Maintain native scrolling; motion is purposeful, respects reduced-motion preferences, and never blocks reading.
 - Do not invent achievements, client logos, awards, testimonials, metrics, or skill percentages. Use known project/design/engineering outcomes only.
-- Resume is intentionally pending and must be presented as unavailable until supplied.
+- Resume is available via `/Hoang_My_Resume.pdf` (and `/resume.pdf`).
 
 ## Brand Commitments
 
@@ -51,7 +51,7 @@ Hoàng Mỹ is a Frontend Specialist focused on React and Next.js who connects e
 - Contact: `nguyenmylb85@gmail.com`.
 - GitHub: https://github.com/HoangMylb
 - LinkedIn: https://www.linkedin.com/in/nguyenhoangmy-dev/
-- Resume: TBD; no resume file or content has been supplied.
+- Resume: Supplied as `/Hoang_My_Resume.pdf` (Hoàng Mỹ Nguyễn — Frontend Specialist).
 - Live project evidence: MDOP at https://mdop-ff0bck2fy-hoang-mys-projects.vercel.app/ and THÈM GÌ CŨNG CÓ at https://themgicungco.vercel.app/. No business metrics or client claims have been supplied.
 
 ## Product Principles

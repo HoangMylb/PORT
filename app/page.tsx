@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowDownRight, ArrowUpRight, Mail } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, FileText, Mail } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -91,7 +91,10 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="header-link" href="https://github.com/HoangMylb" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
+        <div className="header-actions">
+          <a className="header-link" href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer">Resume <ArrowUpRight size={14} /></a>
+          <a className="header-link" href="https://github.com/HoangMylb" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
+        </div>
       </header>
 
       <section className="hero wrap" id="top" aria-labelledby="hero-title">
@@ -102,7 +105,10 @@ export default function Home() {
             <span className="line-mask"><span className="intro-reveal accent-word">with intent.</span></span>
           </h1>
           <p className="hero-summary">I’m Hoàng Mỹ — a React and Next.js specialist building polished digital experiences where engineering, interface, and product thinking meet.</p>
-          <a className="text-cta" href="#work">Explore selected work <ArrowDownRight size={19} /></a>
+          <div className="hero-ctas">
+            <a className="text-cta" href="#work">Explore selected work <ArrowDownRight size={19} /></a>
+            <a className="text-cta" href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer">View Resume (PDF) <ArrowUpRight size={19} /></a>
+          </div>
         </div>
         <aside className="hero-rail" aria-label="Professional summary">
           <div className="portrait-frame hero-portrait"><Image src="/images/hoang-my.jpg" alt="Hoàng Mỹ" fill priority sizes="(max-width: 800px) 78vw, 28vw" /></div>
@@ -155,16 +161,16 @@ export default function Home() {
 
       <section className="about wrap" id="about" aria-labelledby="about-title">
         <div className="about-image portrait-frame"><Image src="/images/hoang-my.jpg" alt="Hoàng Mỹ at a restaurant" fill sizes="(max-width: 800px) 100vw, 38vw" /></div>
-        <div className="about-copy"><h2 id="about-title">A developer with an eye on the whole product.</h2><p>My foundation is frontend, but experience working with .NET systems, APIs, authentication flows, and backend debugging makes collaboration across the product boundary more practical.</p><p>I bring opinions when interface quality or user friction needs attention—while respecting the agreed design and the team’s product direction.</p><a href="https://www.linkedin.com/in/nguyenhoangmy-dev/" target="_blank" rel="noreferrer" className="text-cta">More on LinkedIn <ArrowUpRight size={19} /></a></div>
+        <div className="about-copy"><h2 id="about-title">A developer with an eye on the whole product.</h2><p>My foundation is frontend, but experience working with .NET systems, APIs, authentication flows, and backend debugging makes collaboration across the product boundary more practical.</p><p>I bring opinions when interface quality or user friction needs attention—while respecting the agreed design and the team’s product direction.</p><div className="about-ctas"><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer" className="text-cta">Read Resume (PDF) <ArrowUpRight size={19} /></a><a href="https://www.linkedin.com/in/nguyenhoangmy-dev/" target="_blank" rel="noreferrer" className="text-cta">More on LinkedIn <ArrowUpRight size={19} /></a></div></div>
       </section>
 
       <section className="contact wrap" id="contact" aria-labelledby="contact-title">
         <p>Have a product to build or a frontend problem to untangle?</p>
         <h2 id="contact-title"><a href="mailto:nguyenmylb85@gmail.com">Let’s talk <ArrowUpRight aria-hidden="true" /></a></h2>
-        <div className="contact-links"><a href="mailto:nguyenmylb85@gmail.com"><Mail size={17} /> nguyenmylb85@gmail.com</a><a href="https://github.com/HoangMylb" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={17} /></a><a href="https://www.linkedin.com/in/nguyenhoangmy-dev/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={17} /></a></div>
+        <div className="contact-links"><a href="mailto:nguyenmylb85@gmail.com"><Mail size={17} /> nguyenmylb85@gmail.com</a><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer"><FileText size={17} /> Resume <ArrowUpRight size={17} /></a><a href="https://github.com/HoangMylb" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={17} /></a><a href="https://www.linkedin.com/in/nguyenhoangmy-dev/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={17} /></a></div>
       </section>
 
-      <footer className="wrap"><span>© {new Date().getFullYear()} Hoàng Mỹ</span><span>Frontend Specialist · React / Next.js</span><span>Resume — coming soon</span></footer>
+      <footer className="wrap"><span>© {new Date().getFullYear()} Hoàng Mỹ</span><span>Frontend Specialist · React / Next.js</span><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer" className="footer-link">Resume (PDF) <ArrowUpRight size={13} /></a></footer>
     </main>
   );
 }

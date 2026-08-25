@@ -26,8 +26,13 @@ a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 5px; }
 .wordmark span { color: var(--yellow); }
 .site-header nav { display: flex; gap: 26px; color: var(--muted); }
 .site-header nav a:hover, .header-link:hover { color: var(--paper); }
+.header-actions { display: flex; align-items: center; gap: 20px; }
+.header-actions .header-link:hover { color: var(--yellow); }
 .header-link, .text-cta, .contact-links a { display: inline-flex; align-items: center; gap: 7px; }
 .header-link { color: var(--paper); }
+.hero-ctas, .about-ctas { display: flex; flex-wrap: wrap; gap: 22px; align-items: center; }
+.footer-link { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
+.footer-link:hover { color: var(--yellow); }
 
 .hero { min-height: calc(100svh - 88px); display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(275px, .5fr); gap: clamp(40px, 7vw, 150px); align-items: end; padding: clamp(74px, 11vw, 150px) 0 54px; }
 .hero-copy { align-self: center; }
