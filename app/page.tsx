@@ -20,7 +20,7 @@ const work = [
     tags: ["Model discovery", "Vehicle finder", "Compare tray"],
     engineering:
       "state persistence, browser guards, responsive images, accessible interaction, reduced motion",
-    url: "https://mdop-ff0bck2fy-hoang-mys-projects.vercel.app/"
+    url: "https://mdop-indol.vercel.app/"
   },
   {
     name: "THÈM GÌ CŨNG CÓ",

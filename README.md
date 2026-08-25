@@ -9,7 +9,7 @@ Personal portfolio website for **Hoàng Mỹ**, a Frontend Specialist focused on
 - GSAP-powered reveal motion with `prefers-reduced-motion` support.
 - Next Image optimization for portrait and project media.
 - Selected-work links to live project sites:
-  - [MDOP](https://mdop-ff0bck2fy-hoang-mys-projects.vercel.app/)
+  - [MDOP](https://mdop-indol.vercel.app/)
   - [THÈM GÌ CŨNG CÓ](https://themgicungco.vercel.app/)
 - Semantic navigation, keyboard focus states, and accessible image descriptions.
 

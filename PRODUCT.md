@@ -52,7 +52,7 @@ Hoàng Mỹ is a Frontend Specialist focused on React and Next.js who connects e
 - GitHub: https://github.com/HoangMylb
 - LinkedIn: https://www.linkedin.com/in/nguyenhoangmy-dev/
 - Resume: Supplied as `/Hoang_My_Resume.pdf` (Hoàng Mỹ Nguyễn — Frontend Specialist).
-- Live project evidence: MDOP at https://mdop-ff0bck2fy-hoang-mys-projects.vercel.app/ and THÈM GÌ CŨNG CÓ at https://themgicungco.vercel.app/. No business metrics or client claims have been supplied.
+- Live project evidence: MDOP at https://mdop-indol.vercel.app/ and THÈM GÌ CŨNG CÓ at https://themgicungco.vercel.app/. No business metrics or client claims have been supplied.
 
 ## Product Principles
 
