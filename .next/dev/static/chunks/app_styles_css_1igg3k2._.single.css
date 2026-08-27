@@ -92,6 +92,16 @@ a:focus-visible {
   color: var(--paper);
 }
 
+.header-actions {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.header-actions .header-link:hover {
+  color: var(--yellow);
+}
+
 .header-link, .text-cta, .contact-links a {
   align-items: center;
   gap: 7px;
@@ -100,6 +110,24 @@ a:focus-visible {
 
 .header-link {
   color: var(--paper);
+}
+
+.hero-ctas, .about-ctas {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  display: flex;
+}
+
+.footer-link {
+  color: var(--muted);
+  align-items: center;
+  gap: 4px;
+  display: inline-flex;
+}
+
+.footer-link:hover {
+  color: var(--yellow);
 }
 
 .hero {
@@ -339,6 +367,14 @@ h1 {
   margin-bottom: 4px;
   font-weight: 600;
   display: block;
+}
+
+.project-disclosure {
+  color: var(--muted);
+  opacity: .82;
+  margin-top: 14px;
+  font-size: .8rem;
+  line-height: 1.45;
 }
 
 .project-media {

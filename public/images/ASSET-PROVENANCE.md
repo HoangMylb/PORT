@@ -7,3 +7,5 @@
 | `them-gi-cung-co-concept.png` | Generated in this project from `.impeccable/asset-prompts/them-gi-cung-co.txt` | Conceptual visual for THÈM GÌ CŨNG CÓ; it is not a real restaurant product screenshot or commercial claim. |
 | `mdop-live-home.webp` | Captured from the live MDOP homepage at `https://mdop-indol.vercel.app/` | Live project hero visual. |
 | `them-gi-cung-co-live-home.png` | Captured from the live THÈM GÌ CŨNG CÓ homepage at `https://themgicungco.vercel.app/` | Live project hero visual. |
+| `flowpilot-live-home.png` | Captured from the live FlowPilot case study at `https://bug-fix-gamma.vercel.app/` | Live project case study visual. |
+

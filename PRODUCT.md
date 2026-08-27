@@ -27,8 +27,9 @@ Hoàng Mỹ is a Frontend Specialist focused on React and Next.js who connects e
 ## Operating Context
 
 - The homepage is the first proof surface, leading visitors into selected work and later case studies.
-- MDOP is a conceptual Porsche-inspired automotive conversion experience; THÈM GÌ CŨNG CÓ is a food/restaurant redesign.
+- MDOP is a conceptual Porsche-inspired automotive conversion experience; THÈM GÌ CŨNG CÓ is a food/restaurant redesign; FlowPilot is a bug-fix case study playground demonstrating focused repairs inside an existing web product.
 - Real-world experience includes entering existing systems, tracing frontend/API/backend flows, fixing production issues, and shipping modules or features.
+
 
 ## Capabilities and Constraints
 
@@ -52,7 +53,7 @@ Hoàng Mỹ is a Frontend Specialist focused on React and Next.js who connects e
 - GitHub: https://github.com/HoangMylb
 - LinkedIn: https://www.linkedin.com/in/nguyenhoangmy-dev/
 - Resume: Supplied as `/Hoang_My_Resume.pdf` (Hoàng Mỹ Nguyễn — Frontend Specialist).
-- Live project evidence: MDOP at https://mdop-indol.vercel.app/ and THÈM GÌ CŨNG CÓ at https://themgicungco.vercel.app/. No business metrics or client claims have been supplied.
+- Live project evidence: MDOP at https://mdop-indol.vercel.app/, THÈM GÌ CŨNG CÓ at https://themgicungco.vercel.app/, and FlowPilot at https://bug-fix-gamma.vercel.app/. No business metrics or client claims have been supplied.
 
 ## Product Principles
 

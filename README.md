@@ -11,6 +11,7 @@ Personal portfolio website for **Hoàng Mỹ**, a Frontend Specialist focused on
 - Selected-work links to live project sites:
   - [MDOP](https://mdop-indol.vercel.app/)
   - [THÈM GÌ CŨNG CÓ](https://themgicungco.vercel.app/)
+  - [FlowPilot](https://bug-fix-gamma.vercel.app/) — concept product implementation for frontend debugging and product reasoning (not a commercial client project)
 - Semantic navigation, keyboard focus states, and accessible image descriptions.
 
 ## Tech stack
@@ -53,7 +54,7 @@ DESIGN.md          # Implemented design-system record
 ## Assets and attribution
 
 - `public/images/hoang-my.jpg` is owner-supplied.
-- MDOP and THÈM GÌ CŨNG CÓ live homepage visuals are sourced from their respective deployed websites and link back to those sites.
+- MDOP, THÈM GÌ CŨNG CÓ, and FlowPilot live homepage visuals are sourced from their respective deployed websites and link back to those sites.
 - Generated concept assets are retained only as project materials; the homepage uses the live project visuals.
 - See [public/images/ASSET-PROVENANCE.md](public/images/ASSET-PROVENANCE.md) for the full asset record.
 

@@ -14,8 +14,65 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 const metadata = {
-    title: "Hoàng Mỹ — Frontend Specialist",
-    description: "React and Next.js developer building polished, product-focused digital experiences."
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://hoangmy-portfolio.vercel.app"),
+    title: {
+        default: "Hoàng Mỹ — Frontend Specialist",
+        template: "%s | Hoàng Mỹ"
+    },
+    description: "React and Next.js developer building polished, product-focused digital experiences.",
+    keywords: [
+        "Hoàng Mỹ",
+        "Frontend Specialist",
+        "React Developer",
+        "Next.js",
+        "TypeScript",
+        "Frontend Engineer",
+        "UI/UX",
+        "Web Developer Portfolio"
+    ],
+    authors: [
+        {
+            name: "Hoàng Mỹ",
+            url: "https://github.com/HoangMylb"
+        }
+    ],
+    creator: "Hoàng Mỹ",
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "/",
+        siteName: "Hoàng Mỹ — Portfolio",
+        title: "Hoàng Mỹ — Frontend Specialist",
+        description: "React and Next.js developer building polished, product-focused digital experiences.",
+        images: [
+            {
+                url: "/images/hoang-my.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Hoàng Mỹ — Frontend Specialist"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Hoàng Mỹ — Frontend Specialist",
+        description: "React and Next.js developer building polished, product-focused digital experiences.",
+        images: [
+            "/images/hoang-my.jpg"
+        ],
+        creator: "@HoangMylb"
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    }
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -24,12 +81,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 15,
+            lineNumber: 69,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 14,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 }

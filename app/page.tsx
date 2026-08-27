@@ -34,6 +34,28 @@ const work = [
     engineering:
       "mobile-first composition, food-led imagery, intentional content density",
     url: "https://themgicungco.vercel.app/"
+  },
+  {
+    name: "FlowPilot",
+    kind: "Bug-fix case study playground",
+    image: "/images/flowpilot-live-home.png",
+    alt: "FlowPilot AI operations interface and interactive workflow preview card",
+    focus: "Debugging → focused repair → safer product behavior",
+    detail:
+      "A concept product implementation that demonstrates how I investigate common issues inside an existing web product, then make focused fixes without disturbing unrelated UI or flows.",
+    tags: [
+      "UI positioning and interaction",
+      "Defensive API rendering",
+      "Form validation and async states",
+      "Responsive layout architecture",
+      "State consistency under rapid interaction"
+    ],
+    engineering:
+      "Positioning context, fallback UI states, validation boundaries, async feedback, responsive structure, and predictable state updates.",
+    url: "https://bug-fix-gamma.vercel.app/",
+    linkLabel: "Live case study",
+    disclosure:
+      "Concept implementation for frontend debugging and product reasoning. Not a commercial client project."
   }
 ];
 
@@ -136,8 +158,11 @@ export default function Home() {
               <p className="project-detail">{project.detail}</p>
               <ul className="project-tags" aria-label={`${project.name} technologies and focus`}>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
               <p className="engineering-note"><span>Engineering consideration</span>{project.engineering}</p>
+              {project.disclosure && (
+                <p className="project-disclosure">{project.disclosure}</p>
+              )}
             </div>
-            <div className="project-media"><a className="work-image" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} live project`}><Image src={project.image} alt={project.alt} fill sizes="(max-width: 900px) 100vw, 63vw" /></a><p><a href={project.url} target="_blank" rel="noreferrer">Live homepage visual <ArrowUpRight size={13} /></a></p></div>
+            <div className="project-media"><a className="work-image" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} live project`}><Image src={project.image} alt={project.alt} fill sizes="(max-width: 900px) 100vw, 63vw" /></a><p><a href={project.url} target="_blank" rel="noreferrer">{project.linkLabel ?? "Live homepage visual"} <ArrowUpRight size={13} /></a></p></div>
           </article>
         ))}
       </section>
