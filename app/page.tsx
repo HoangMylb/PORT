@@ -62,7 +62,29 @@ const work = [
 const expertise = [
   ["Frontend engineering", "React, Next.js, TypeScript, responsive UI, component architecture"],
   ["Product interface", "UI implementation, interaction, motion, accessibility, performance"],
-  ["Full-stack awareness", ".NET, APIs, authentication, backend debugging, integration"],
+  ["Existing app bug fixing", "Debug and repair scoped issues in existing React and Next.js applications: broken user flows, frontend/API mismatches, responsive UI problems, authentication integration, and dashboard bugs."],
+  ["Frontend / API integration", "Trace and resolve issues across React UI, REST APIs, and backend integration—including .NET and authentication boundaries."],
+];
+
+const flowdeskCases = [
+  {
+    title: "API Data Loads, UI Renders Empty",
+    evidence: "GET /api/customers returned HTTP 200 with valid records, but the UI showed an empty state.",
+    rootCause: "Frontend expected a wrapped response while the API returned Customer[].",
+    capability: "API contract debugging"
+  },
+  {
+    title: "Valid Login Credentials Rejected",
+    evidence: "The login request reached ASP.NET Core but returned HTTP 400 before credential verification.",
+    rootCause: "Frontend sent emailAddress while the backend DTO expected email.",
+    capability: "Frontend ↔ backend authentication debugging"
+  },
+  {
+    title: "Dashboard Overflowed on Mobile",
+    evidence: "Desktop was correct, but the KPI grid exceeded 375–390px mobile viewports.",
+    rootCause: "Two 210px minimum grid columns exceeded available mobile width.",
+    capability: "Responsive UI regression debugging"
+  }
 ];
 
 export default function Home() {
@@ -98,6 +120,19 @@ export default function Home() {
           }
         );
       });
+
+      gsap.fromTo(
+        ".flowdesk-proof",
+        { y: 22, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.65,
+          stagger: 0.12,
+          ease: "power3.out",
+          scrollTrigger: { trigger: ".flowdesk-proofs", start: "top 78%", once: true }
+        }
+      );
     }, root);
 
     return () => context.revert();
@@ -146,8 +181,35 @@ export default function Home() {
         <p>I care about <em>how it works</em> and <em>how it feels</em>—from reusable architecture and API flows to the hierarchy, motion, and clarity a user actually experiences.</p>
       </section>
 
+      <section className="flowdesk wrap" aria-labelledby="flowdesk-title">
+        <div className="flowdesk-intro">
+          <p className="project-label">Featured debugging case study</p>
+          <h2 id="flowdesk-title">Not every project needs to be rebuilt.</h2>
+          <p className="flowdesk-lead">FlowDesk demonstrates how I approach an inherited application when something is already broken: reproduce the issue, inspect the evidence, trace the affected flow, identify the root cause, apply a scoped fix, and verify surrounding behavior.</p>
+          <p className="flowdesk-positioning">I work best with existing React and Next.js applications where the product already exists but a user flow, API integration, authentication path, or responsive interface needs to be understood and fixed.</p>
+          <a className="flowdesk-cta" href="https://flowdesk-chi-olive.vercel.app/" target="_blank" rel="noopener noreferrer">Explore FlowDesk <ArrowUpRight size={18} /></a>
+        </div>
+        <div className="flowdesk-evidence">
+          <div className="flowdesk-heading">
+            <div><p className="project-label">FlowDesk</p><h3>Existing app. Specific problem. Scoped fix.</h3></div>
+            <p>React · Next.js · TypeScript · ASP.NET Core · EF Core · SQL Server · REST API · JWT</p>
+          </div>
+          <ol className="flowdesk-proofs">
+            {flowdeskCases.map((caseStudy, index) => (
+              <li className="flowdesk-proof" key={caseStudy.title}>
+                <p className="case-number">Case 0{index + 1}</p>
+                <h4>{caseStudy.title}</h4>
+                <p><span>Evidence</span>{caseStudy.evidence}</p>
+                <p><span>Root cause</span>{caseStudy.rootCause}</p>
+                <p className="case-capability">{caseStudy.capability}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       <section className="work-section wrap" id="work" aria-labelledby="work-title">
-        <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Live project evidence, paired with the product and engineering decisions that made each experience work.</p></div>
+        <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Live project evidence, paired with the product and engineering decisions that made each experience work. FlowDesk is the featured existing-app debugging case study above.</p></div>
         {work.map((project, index) => (
           <article className="project" key={project.name}>
             <div className="project-copy">
