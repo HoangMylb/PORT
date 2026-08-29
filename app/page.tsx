@@ -68,20 +68,23 @@ const expertise = [
 
 const flowdeskCases = [
   {
+    type: "API contract",
     title: "API Data Loads, UI Renders Empty",
-    evidence: "GET /api/customers returned HTTP 200 with valid records, but the UI showed an empty state.",
+    evidence: ["GET /api/customers → 200 OK", "Valid records returned.", "UI still showed empty state."],
     rootCause: "Frontend expected a wrapped response while the API returned Customer[].",
     capability: "API contract debugging"
   },
   {
+    type: "Authentication contract",
     title: "Valid Login Credentials Rejected",
-    evidence: "The login request reached ASP.NET Core but returned HTTP 400 before credential verification.",
+    evidence: ["POST /api/auth/login reached ASP.NET Core.", "HTTP 400 returned before credential verification."],
     rootCause: "Frontend sent emailAddress while the backend DTO expected email.",
     capability: "Frontend ↔ backend authentication debugging"
   },
   {
+    type: "Responsive regression",
     title: "Dashboard Overflowed on Mobile",
-    evidence: "Desktop was correct, but the KPI grid exceeded 375–390px mobile viewports.",
+    evidence: ["Desktop was correct.", "The KPI grid overflowed at 375–390px mobile viewports."],
     rootCause: "Two 210px minimum grid columns exceeded available mobile width.",
     capability: "Responsive UI regression debugging"
   }
@@ -187,7 +190,7 @@ export default function Home() {
           <h2 id="flowdesk-title">Not every project needs to be rebuilt.</h2>
           <p className="flowdesk-lead">FlowDesk demonstrates how I approach an inherited application when something is already broken: reproduce the issue, inspect the evidence, trace the affected flow, identify the root cause, apply a scoped fix, and verify surrounding behavior.</p>
           <p className="flowdesk-positioning">I work best with existing React and Next.js applications where the product already exists but a user flow, API integration, authentication path, or responsive interface needs to be understood and fixed.</p>
-          <a className="flowdesk-cta" href="https://flowdesk-chi-olive.vercel.app/" target="_blank" rel="noopener noreferrer">Explore FlowDesk <ArrowUpRight size={18} /></a>
+          <a className="flowdesk-cta" href="https://flowdesk-chi-olive.vercel.app/" target="_blank" rel="noopener noreferrer">View all 3 debugging cases <ArrowUpRight size={18} /></a>
         </div>
         <div className="flowdesk-evidence">
           <div className="flowdesk-heading">
@@ -197,11 +200,15 @@ export default function Home() {
           <ol className="flowdesk-proofs">
             {flowdeskCases.map((caseStudy, index) => (
               <li className="flowdesk-proof" key={caseStudy.title}>
-                <p className="case-number">Case 0{index + 1}</p>
-                <h4>{caseStudy.title}</h4>
-                <p><span>Evidence</span>{caseStudy.evidence}</p>
-                <p><span>Root cause</span>{caseStudy.rootCause}</p>
-                <p className="case-capability">{caseStudy.capability}</p>
+                <div className="case-title">
+                  <p className="case-number">Case 0{index + 1} · {caseStudy.type}</p>
+                  <h4>{caseStudy.title}</h4>
+                </div>
+                <div className="case-detail">
+                  <div><span>Evidence</span><p>{caseStudy.evidence.map((line) => <span key={line}>{line}</span>)}</p></div>
+                  <div><span>Root cause</span><p>{caseStudy.rootCause}</p></div>
+                  <div className="case-capability"><span>Capability</span><p>{caseStudy.capability}</p></div>
+                </div>
               </li>
             ))}
           </ol>
