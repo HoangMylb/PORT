@@ -8,19 +8,18 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "https://hoangmy-portfolio.vercel.app"
   ),
   title: {
-    default: "Hoàng Mỹ — Frontend Specialist",
+    default: "Hoàng Mỹ — Frontend-leaning Full-stack Developer",
     template: "%s | Hoàng Mỹ"
   },
   description:
-    "React and Next.js developer building polished, product-focused digital experiences.",
+    "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
   keywords: [
     "Hoàng Mỹ",
-    "Frontend Specialist",
+    "Frontend-leaning Full-stack Developer",
     "React Developer",
     "Next.js",
     "TypeScript",
-    "Frontend Engineer",
-    "UI/UX",
+    ".NET",
     "Web Developer Portfolio"
   ],
   authors: [{ name: "Hoàng Mỹ", url: "https://github.com/HoangMylb" }],
@@ -30,23 +29,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Hoàng Mỹ — Portfolio",
-    title: "Hoàng Mỹ — Frontend Specialist",
+    title: "Hoàng Mỹ — Frontend-leaning Full-stack Developer",
     description:
-      "React and Next.js developer building polished, product-focused digital experiences.",
+      "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
     images: [
       {
         url: "/images/hoang-my.jpg",
         width: 1200,
         height: 630,
-        alt: "Hoàng Mỹ — Frontend Specialist"
+        alt: "Hoàng Mỹ — Frontend-leaning Full-stack Developer"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hoàng Mỹ — Frontend Specialist",
+    title: "Hoàng Mỹ — Frontend-leaning Full-stack Developer",
     description:
-      "React and Next.js developer building polished, product-focused digital experiences.",
+      "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
     images: ["/images/hoang-my.jpg"],
     creator: "@HoangMylb"
   },
@@ -62,11 +61,3 @@ export const metadata: Metadata = {
     }
   }
 };
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}
