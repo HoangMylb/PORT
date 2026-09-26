@@ -161,10 +161,10 @@ export default function Home() {
         <div className="hero-copy">
           <p className="availability"><i /> Available for thoughtful product work</p>
           <h1 id="hero-title">
-            <span className="line-mask"><span className="intro-reveal">Frontend systems</span></span>
-            <span className="line-mask"><span className="intro-reveal accent-word">with intent.</span></span>
+            <span className="line-mask"><span className="intro-reveal">Frontend-led systems</span></span>
+            <span className="line-mask"><span className="intro-reveal accent-word">with full-stack context.</span></span>
           </h1>
-          <p className="hero-summary">I’m Hoàng Mỹ — a React and Next.js specialist building polished digital experiences where engineering, interface, and product thinking meet.</p>
+          <p className="hero-summary">I’m Hoàng Mỹ — a frontend-leaning full-stack developer who builds, debugs, integrates, tests, and ships focused improvements for production web systems.</p>
           <div className="hero-ctas">
             <a className="text-cta" href="#work">Explore selected work <ArrowDownRight size={19} /></a>
             <a className="text-cta" href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer">View Resume (PDF) <ArrowUpRight size={19} /></a>
@@ -216,7 +216,7 @@ export default function Home() {
       </section>
 
       <section className="work-section wrap" id="work" aria-labelledby="work-title">
-        <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Live project evidence, paired with the product and engineering decisions that made each experience work. FlowDesk is the featured existing-app debugging case study above.</p></div>
+        <div className="section-heading"><h2 id="work-title">Selected work</h2><p>OpsDesk is the primary repository proof of operational workflows; the live projects below demonstrate interface and product implementation. FlowDesk remains the focused debugging case study above.</p></div>
         {work.map((project, index) => (
           <article className="project" key={project.name}>
             <div className="project-copy">
@@ -264,7 +264,7 @@ export default function Home() {
         <div className="contact-links"><a href="mailto:nguyenmylb85@gmail.com"><Mail size={17} /> nguyenmylb85@gmail.com</a><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer"><FileText size={17} /> Resume <ArrowUpRight size={17} /></a><a href="https://github.com/HoangMylb" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={17} /></a><a href="https://www.linkedin.com/in/nguyenhoangmy-dev/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={17} /></a></div>
       </section>
 
-      <footer className="wrap"><span>© {new Date().getFullYear()} Hoàng Mỹ</span><span>Frontend Specialist · React / Next.js</span><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer" className="footer-link">Resume (PDF) <ArrowUpRight size={13} /></a></footer>
+      <footer className="wrap"><span>© {new Date().getFullYear()} Hoàng Mỹ</span><span>Frontend-leaning Full-stack Developer · React / .NET</span><a href="/Hoang_My_Resume.pdf" target="_blank" rel="noreferrer" className="footer-link">Resume (PDF) <ArrowUpRight size={13} /></a></footer>
     </main>
   );
 }
