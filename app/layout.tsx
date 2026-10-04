@@ -1,7 +1,15 @@
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/source-sans-3";
+import localFont from "next/font/local";
 import "./styles.css";
+import "./overrides.css";
 import type { Metadata } from "next";
+
+const cubano = localFont({
+  src: "../public/fonts/iCielBCCubano-Normal.otf",
+  variable: "--font-cubano",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -12,14 +20,15 @@ export const metadata: Metadata = {
     template: "%s | Hoàng Mỹ"
   },
   description:
-    "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
+    "Frontend-leaning full-stack developer building polished React experiences and dependable .NET product systems.",
   keywords: [
     "Hoàng Mỹ",
     "Frontend-leaning Full-stack Developer",
     "React Developer",
     "Next.js",
     "TypeScript",
-    ".NET",
+    "Frontend Engineer",
+    "UI/UX",
     "Web Developer Portfolio"
   ],
   authors: [{ name: "Hoàng Mỹ", url: "https://github.com/HoangMylb" }],
@@ -31,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Hoàng Mỹ — Portfolio",
     title: "Hoàng Mỹ — Frontend-leaning Full-stack Developer",
     description:
-      "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
+      "Frontend-leaning full-stack developer building polished React experiences and dependable .NET product systems.",
     images: [
       {
         url: "/images/hoang-my.jpg",
@@ -45,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hoàng Mỹ — Frontend-leaning Full-stack Developer",
     description:
-      "Frontend-leaning full-stack developer building, debugging, integrating, testing and shipping focused improvements for production web systems.",
+      "Frontend-leaning full-stack developer building polished React experiences and dependable .NET product systems.",
     images: ["/images/hoang-my.jpg"],
     creator: "@HoangMylb"
   },
@@ -61,3 +70,11 @@ export const metadata: Metadata = {
     }
   }
 };
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" className={cubano.variable}>
+      <body>{children}</body>
+    </html>
+  );
+}

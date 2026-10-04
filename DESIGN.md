@@ -2,44 +2,31 @@
 
 ## Direction
 
-**Product Signal**: a premium, evidence-led personal portfolio. Each professional claim sits beside a concrete project, capability, or working-method proof. The page avoids a CV inventory and generic SaaS chrome while keeping recruiting decisions easy to make.
+**Product signal:** a bold personal portfolio that introduces Hoàng Mỹ as a developer whose work is both considered and dependable. It treats the page as an experience and a project archive, rather than a technical CV.
 
-## Mode and narrative
+## Narrative
 
-- **Mode:** Experience. The work and its reasoning lead; the interface stays quiet enough to support inspection.
-- **Reading path:** positioning → selected-work evidence → capabilities → working method → full-product awareness → contact.
-- **Focal moment:** the hero’s display copy and portrait establish the role before the visitor reaches the project proof rail.
+- **Mode:** Experience.
+- **Path:** entry card → identity-led hero → project archive → working point of view → capabilities → process → contact.
+- **First impression:** large editorial type, a real portrait, and a sharply stated frontend/product identity establish a memorable person before the visitor evaluates details.
 
-## Type
+## Visual system
 
-- **Display:** Bricolage Grotesque variable, used for display hierarchy and project titles. Dense, contemporary, and deliberately unlike the default system/Inter portfolio voice.
-- **Body:** Source Sans 3 variable, used for readable explanatory copy and metadata.
-- **Roles:** display title, section heading, project title, body, muted supporting copy, and small tabular metadata. Body copy stays at 16px or above; display scale is responsive and capped below 6rem on the desktop implementation.
+- **Grounds:** near-black `#0b0b0c`, soft paper `#f5f0e8`, dark charcoal `#151416`.
+- **Signals:** vermilion `#cf271a` carries display emphasis and a clean acid-lime `#c7ff3e` carries availability and selected actions.
+- **Type:** Bricolage Grotesque provides dense display character; Source Sans 3 keeps explanatory copy direct and legible. A small, restrained italic serif is used only for the hero salutation.
+- **Material:** printed editorial scale, full-bleed photographic work frames, single-weight rules, and purposeful high-contrast fields. No generic product cards, glass surfaces, or decorative grids.
 
-## Colour and material
+## Layout and behavior
 
-- **Ground:** tinted graphite `#11110f`, not pure black.
-- **Primary text:** warm off-white `#f1eee6`.
-- **Muted text:** warm stone `#a9a69e`.
-- **Accent:** restrained warm yellow `#e5b90b`, reserved for emphasis, active actions, project count, and status.
-- **Material:** editorial rules, photographic project frames, and high-contrast type. No decorative glass, gradient type, neon glow, nested card treatment, or badge walls.
+- The initial entry card is an optional theatrical threshold that does not conceal the page from assistive technologies.
+- The hero layers a cropped portrait and oversized background lettering inside a warm paper field; its composition shifts from a two-column portrait/editorial arrangement to a stacked mobile poster.
+- Work is an uneven archive grid. Each project image is a genuine interactive control that opens a lightweight details panel, with a link to the verified project destination.
+- About, capabilities, process, and contact alternate density and surface color to give the scroll a clear rhythm.
+- GSAP supplies one authored entrance moment for hero lettering, portrait clipping, and the work archive; reduced-motion users receive the final readable states immediately.
 
-## Layout
+## Accessibility and responsive rules
 
-- Wide, editorial desktop grid with a large content field and a narrower proof rail in the hero.
-- Selected work is a two-column claim-and-proof composition, not same-sized cards.
-- Mobile recomposes to a single reading column, makes proof metadata static, and removes hover dependence.
-- Section rules establish rhythm; quiet expanses separate dense evidence blocks.
-
-## Motion and interaction
-
-- GSAP uses a masked hero-copy reveal and image-frame clipping on entry to selected work.
-- Motion communicates a proof becoming available, not generic scroll spectacle; native scrolling is unchanged.
-- Images have a restrained hover-scale response on pointer devices.
-- `prefers-reduced-motion` disables spatial movement and leaves content immediately readable.
-
-## Accessibility and performance
-
-- Semantic sections and labelled navigation, real email/social anchors, visible focus styling, selection/caret-adjacent browser theming, text contrast, and responsive image alt text.
-- Project and portrait media use Next Image with responsive `sizes`; noncritical imagery is lazy-loaded by default.
-- Project frames use captured live homepage hero imagery, link directly to the corresponding deployed projects, and avoid making unsupplied commercial claims.
+- Semantic landmarks, labelled navigation, descriptive project controls, keyboard focus treatment, real links, and a labelled project dialog are retained.
+- Desktop uses generous editorial scale; tablet preserves the side-by-side hero; mobile collapses project archive and long lists into a single readable column while preserving hierarchy and touch targets.
+- Text remains contrast-safe against each surface, and no interaction depends on hover.
